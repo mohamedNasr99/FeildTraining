@@ -1,4 +1,5 @@
 ﻿using FeildTraining.Models;
+using Mama_Food.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FeildTraining.Data
@@ -13,5 +14,7 @@ namespace FeildTraining.Data
         public DbSet<Vendor> vendors { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Register> Registers { get; set; }
+        public DbSet<LogIn> logIns { get; set; }
     }
 }

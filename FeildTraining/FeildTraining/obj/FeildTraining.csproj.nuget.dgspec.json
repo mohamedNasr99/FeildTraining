@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\probl\\OneDrive\\سطح المكتب\\feildtraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj": {}
+    "C:\\Users\\probl\\Downloads\\ft\\FeildTraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj": {}
   },
   "projects": {
-    "C:\\Users\\probl\\OneDrive\\سطح المكتب\\feildtraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj": {
+    "C:\\Users\\probl\\Downloads\\ft\\FeildTraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\probl\\OneDrive\\سطح المكتب\\feildtraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj",
+        "projectUniqueName": "C:\\Users\\probl\\Downloads\\ft\\FeildTraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj",
         "projectName": "FeildTraining",
-        "projectPath": "C:\\Users\\probl\\OneDrive\\سطح المكتب\\feildtraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj",
+        "projectPath": "C:\\Users\\probl\\Downloads\\ft\\FeildTraining\\FeildTraining\\FeildTraining\\FeildTraining.csproj",
         "packagesPath": "C:\\Users\\probl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\probl\\OneDrive\\سطح المكتب\\feildtraining\\FeildTraining\\FeildTraining\\obj\\",
+        "outputPath": "C:\\Users\\probl\\Downloads\\ft\\FeildTraining\\FeildTraining\\FeildTraining\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\probl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             }
           },
           "imports": [
@@ -74,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

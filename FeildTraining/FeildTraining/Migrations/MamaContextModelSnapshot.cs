@@ -115,6 +115,40 @@ namespace FeildTraining.Migrations
                     b.ToTable("Orders");
                 });
 
+            modelBuilder.Entity("FeildTraining.Models.Register", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Registers");
+                });
+
             modelBuilder.Entity("FeildTraining.Models.Vendor", b =>
                 {
                     b.Property<int>("Id")
@@ -174,6 +208,15 @@ namespace FeildTraining.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("FeildTraining.Models.Register", b =>
+                {
+                    b.HasOne("FeildTraining.Models.Customer", "Customer")
+                        .WithMany("Registers")
+                        .HasForeignKey("CustomerId");
+
+                    b.Navigation("Customer");
+                });
+
             modelBuilder.Entity("OrderVendor", b =>
                 {
                     b.HasOne("FeildTraining.Models.Order", null)
@@ -192,6 +235,8 @@ namespace FeildTraining.Migrations
             modelBuilder.Entity("FeildTraining.Models.Customer", b =>
                 {
                     b.Navigation("Order");
+
+                    b.Navigation("Registers");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Mama_Food.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace FeildTraining.Models
 {
@@ -15,5 +16,7 @@ namespace FeildTraining.Models
         public string Password { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public ICollection<Order>? Order { get; set; }
+        public ICollection<Register>? Registers { get; set; }
+        public ICollection<LogIn>? logIns { get; set; }
     }
 }
