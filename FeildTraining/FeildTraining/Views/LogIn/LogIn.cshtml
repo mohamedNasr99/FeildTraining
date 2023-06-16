@@ -1,7 +1,16 @@
-﻿
+﻿@using Mama_Food.Models;
+@model LogIn
 @{
     ViewData["Title"] = "LogIn";
 }
-
-<h1>LogIn</h1>
-
+<h2>LogIn</h2>
+<form method="post">
+    <div class="row g-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+    </div>
+</form>
