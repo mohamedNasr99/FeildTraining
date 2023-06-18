@@ -1,8 +1,45 @@
-﻿@{
+﻿@using Mama_Food.Models;
+@model Index
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div class="jumbotron">
+            <h1>Welcome to our website!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis elit ut enim ultrices, in rhoncus sapien pharetra.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis elit ut enim ultrices, in rhoncus sapien pharetra.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis elit ut enim ultrices, in rhoncus sapien pharetra.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis elit ut enim ultrices, in rhoncus sapien pharetra.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
